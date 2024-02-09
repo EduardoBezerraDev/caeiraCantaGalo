@@ -1,0 +1,18 @@
+
+@media (max-width: 600px) {
+    .video{
+        width: 100%!important;
+    }
+  }
+.title {
+    color: var(--secondary-font-color);
+    font-size: 160%;
+    text-align: center;
+}
+.video{
+    width: 50%;
+}
+.subtitle{
+    font-size: 13px;
+    color: var(--main-font-color)
+}

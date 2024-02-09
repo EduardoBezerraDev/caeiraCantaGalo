@@ -1,0 +1,30 @@
+@import "./vars.css";
+
+/*
+--main-bg-color: whitesmoke;
+--main-font-color: #111;
+--secondary-font-color: rgba(13,56,128);
+*/
+
+* {
+    font-family: CircularStdBold, sans-serif;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 600px) {
+    .img_carousel {
+        height: 300px !important;
+    }
+}
+
+.title {
+    color: var(--secondary-font-color);
+    font-size: 160%;
+    text-align: center;
+}
+
+.img_carousel {
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+}

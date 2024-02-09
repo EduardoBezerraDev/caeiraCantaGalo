@@ -1,0 +1,70 @@
+@import "./vars.css";
+
+/*
+--main-bg-color: whitesmoke;
+--main-font-color: #111;
+--secondary-font-color: rgba(13,56,128);
+*/
+
+.title {
+    color: var(--secondary-font-color);
+    font-size: 160%;
+    text-align: center;
+}
+
+.map_container {
+    display: flex;
+    justify-content: space-between
+}
+
+.map {
+    width: 49%;
+}
+
+.img {
+    width: 50%
+}
+
+.links_container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: row;
+    text-align: left
+}
+
+.container_contact_form {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .map_container {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%
+    }
+
+    .container_contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_contact_form {
+        width: 100%;
+    }
+
+    .links_container {
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+
+}

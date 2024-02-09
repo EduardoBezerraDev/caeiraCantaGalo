@@ -1,0 +1,8 @@
+:root {
+    --main-bg-color: whitesmoke;
+    --secondary-bg-color: #007CE0;
+
+    --main-font-color: #111;
+    --secondary-font-color: rgba(13,56,128);
+    --tertiary-font-color: white;
+  }
