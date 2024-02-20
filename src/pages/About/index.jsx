@@ -3,13 +3,17 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import calcarioCantaGalo from '/assets/companies/calcario_canta_galo.mp4'
+import fazendaCantaGalo from '/assets/companies/fazenda_canta_galo.mp4'
 import video from '/assets/aboutUs/pec_nordeste.mp4'
+
 import { Carousel } from 'react-responsive-carousel';
 
 const About = () => {
     return (
         <div style={{ marginTop: '15vh', textAlign: 'center', padding: 20, }}>
             <section>
+
                 <Carousel autoPlay infiniteLoop interval={10000} preview={false} swipeable={false} >
                     <div className={styles.section_profile}>
                         <img className={styles.profile} src="/assets/aboutUs/profile_founder.jpg" alt="Fundador da empresa" />
@@ -25,7 +29,7 @@ const About = () => {
                         <Typography textAlign={'left'} padding={2} paddingTop={3} display={'flex'} flexDirection={'column'}>
                             <h3>Gestor do Grupo Caeira</h3>
                             <p>
-                            Raimundo Ronald Torres de Andrade, assumiu a empresa buscando não medir esforços para o crescimento do grupo Caeira Canta Galo. Hoje a empresa de mineração, trabalha com extrema qualidade, possuindo um sistema de gestão que demonstra os custos dos processos e departamentos. A busca é constante pela qualidade total, o grupo, já começa se adequar em busca do ISO, na qualidade de produtos e empresarial. A gestão é participativa e colaborativa,  criando um efeito sinergistico fantastico. O grupo sempre está inovando, seja pela empresa de transportes ou através de sua fazenda, hoje produção de grãos, e de milho, começa despontar agregando no faturamento do grupo, assim como a criação de gado e de cavalos. A criação de cavalos das raças Paint Horse e Quarto de milha, ambas originária dos Estados Unidos. A grande aposta é na raça Paint Horse que é a grande paixão aposta do momento.
+                                Raimundo Ronald Torres de Andrade, assumiu a empresa buscando não medir esforços para o crescimento do grupo Caeira Canta Galo. Hoje a empresa de mineração, trabalha com extrema qualidade, possuindo um sistema de gestão que demonstra os custos dos processos e departamentos. A busca é constante pela qualidade total, o grupo, já começa se adequar em busca do ISO, na qualidade de produtos e empresarial. A gestão é participativa e colaborativa,  criando um efeito sinergistico fantastico. O grupo sempre está inovando, seja pela empresa de transportes ou através de sua fazenda, hoje produção de grãos, e de milho, começa despontar agregando no faturamento do grupo, assim como a criação de gado e de cavalos. A criação de cavalos das raças Paint Horse e Quarto de milha, ambas originária dos Estados Unidos. A grande aposta é na raça Paint Horse que é a grande paixão aposta do momento.
                             </p>
                         </Typography>
                     </div>
@@ -45,9 +49,9 @@ const About = () => {
                             <Typography gutterBottom variant="h5" component="div">
                                 Calcário Canta Galo
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa voluptatem distinctio quod, est similique eos perferendis libero autem et esse, facere repudiandae blanditiis! Dolorum, illo! Inventore maiores placeat ea.
-                            </Typography>
+                            <video className={styles.video} controls width={'100%'} >
+                                <source src={calcarioCantaGalo} type="video/mp4" />
+                            </video>
                         </CardContent>
                     </Card>
                     <Card className={styles.card} sx={{ maxWidth: 345 }}>
@@ -60,9 +64,7 @@ const About = () => {
                             <Typography gutterBottom variant="h5" component="div">
                                 Caeira Canta Galo
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa voluptatem distinctio quod, est similique eos perferendis libero autem et esse, facere repudiandae blanditiis! Dolorum, illo! Inventore maiores placeat ea.
-                            </Typography>
+                            <img src="/assets/companies/transportes_caeira_canta_galo.jpg" alt="" srcset="" width={'100%'} height={'176px'} />
                         </CardContent>
                     </Card>
 
@@ -76,9 +78,9 @@ const About = () => {
                             <Typography gutterBottom variant="h5" component="div">
                                 Fazenda Canta Galo
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa voluptatem distinctio quod, est similique eos perferendis libero autem et esse, facere repudiandae blanditiis! Dolorum, illo! Inventore maiores placeat ea.
-                            </Typography>
+                            <video className={styles.video} controls width={'100%'} >
+                                <source src={fazendaCantaGalo} type="video/mp4" />
+                            </video>
                         </CardContent>
                     </Card>
 

@@ -1,0 +1,12 @@
+@import "./vars.css";
+.title {
+    color: var(--secondary-font-color);
+    font-size: 160%;
+    text-align: center;
+}
+
+.overlay:hover {
+    background-color: var(--secondary-overlay-bg-color) ;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}

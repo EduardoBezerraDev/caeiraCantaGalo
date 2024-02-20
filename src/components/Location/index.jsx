@@ -3,6 +3,7 @@ import texts from '../../consts/texts'
 const Location = () => {
     return (
         <section>
+            <img src="/assets/banners/products_banner.png" alt="banner de produtos" width={'100%'} />
             <div style={{ textAlign: 'center', width: '100%' }}>
                 <h4 className={styles.title}>{texts.about_home.title}</h4>
                 <p className={styles.main_text}>

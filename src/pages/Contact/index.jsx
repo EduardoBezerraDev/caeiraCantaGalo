@@ -90,20 +90,20 @@ const Contact = () => {
                 <div className={styles.links_container} >
                     <div>
                         <div>
-                            <Typography variant="span" className={styles.title}>Contato de vendas: </Typography>
-                            <Button type='button' variant='contained' style={{ borderRadius: '15px' }}>
+                            <Typography variant="span" className={styles.title}>Contato de vendas: </Typography><br/>
+                            <Button type='button' variant='contained' style={{ borderRadius: '5px' }}>
                                 <a style={{ color: 'white', textDecoration: 'none' }} href={`tel:+${contacts.whatsappBuyInfo.number}`}>{formatPhoneNumber(contacts.whatsappBuyInfo.number)}</a>
                             </Button>
                         </div>
                         <div style={{ marginTop: '2vh' }}>
-                            <Typography variant="span" className={styles.title}>E-Mail: </Typography>
-                            <Button type='button' variant='contained' style={{ borderRadius: '15px' }}>
+                            <Typography variant="span" className={styles.title}>E-Mail: </Typography><br/>
+                            <Button type='button' variant='contained' style={{ borderRadius: '5px' }}>
                                 <a style={{ color: 'white', textDecoration: 'none', textTransform: 'initial' }} href={`mailto:${contacts.email}`}>{contacts.email}</a>
                             </Button>
                         </div>
                         <div style={{ marginTop: '2vh' }}>
-                            <Typography variant="span" className={styles.title}>WhatsApp: </Typography>
-                            <Button type='button' variant='contained' color='success' style={{ borderRadius: '15px' }}>
+                            <Typography variant="span" className={styles.title}>WhatsApp: </Typography><br/>
+                            <Button type='button' variant='contained' color='success' style={{ borderRadius: '5px' }}>
                                 <img width={15} src="https://i.pinimg.com/originals/25/42/9b/25429b779b07add131dada25ff0830e5.png" alt="icone whatsApp" />
                                 <a style={{ color: 'white', textDecoration: 'none', marginLeft: 10 }} href={`https://api.whatsapp.com/send?phone=${encodeURIComponent(contacts.whatsappBuyInfo.number)}`}>{formatPhoneNumber(contacts.whatsappBuyInfo.number)}</a>
                             </Button>
@@ -116,4 +116,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact
