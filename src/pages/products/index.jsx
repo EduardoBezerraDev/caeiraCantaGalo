@@ -22,6 +22,7 @@ const Products = () => {
             <Typography gutterBottom variant="h1" fontSize={25} className={styles.title}>
                 Conheça nossos produtos
             </Typography>
+            <small style={{color: 'grey'}}>Compre agora!</small>
             <div className={styles.section_container} >
                 {soluctionsCarousel.map((info, key) => (
                     <Card key={key} className={styles.card} sx={{ maxWidth: 358 }}>

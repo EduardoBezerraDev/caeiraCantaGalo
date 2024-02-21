@@ -3,8 +3,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import calcarioCantaGalo from '/assets/companies/calcario_canta_galo.mp4'
+import transportesCantaGalo from '/assets/companies/transportes_canta_galo.mp4'
 import fazendaCantaGalo from '/assets/companies/fazenda_canta_galo.mp4'
+import calcarioCantaGalo from '/assets/companies/calcario_canta_galo.mp4'
+
 import video from '/assets/aboutUs/pec_nordeste.mp4'
 
 import { Carousel } from 'react-responsive-carousel';
@@ -13,7 +15,6 @@ const About = () => {
     return (
         <div style={{ marginTop: '15vh', textAlign: 'center', padding: 20, }}>
             <section>
-
                 <Carousel autoPlay infiniteLoop interval={10000} preview={false} swipeable={false} >
                     <div className={styles.section_profile}>
                         <img className={styles.profile} src="/assets/aboutUs/profile_founder.jpg" alt="Fundador da empresa" />
@@ -34,20 +35,19 @@ const About = () => {
                         </Typography>
                     </div>
                 </Carousel>
-
             </section>
-            <section className={styles.aboutCardContainer} style={{ marginTop: '15vh' }}>
+            <Typography variant="h4" className={styles.title}>Nossas Empresas</Typography><br/>
+            <section className={styles.aboutCardContainer} style={{ marginTop: '2vh' }}>
                 <section className={styles.aboutCardContainer}>
 
                     <Card className={styles.card} sx={{ maxWidth: 345 }}>
                         <CardMedia
-                            sx={{ height: 140 }}
-                            style={{ backgroundImage: 'url("/assets/aboutUs/calcario_canta_galo.png")', backgroundSize: 'auto' }}
-                            title="green iguana"
+                            style={{ backgroundImage: 'url("/assets/aboutUs/calcario_canta_galo.png")' }}
+                            sx={{ height: 160 }}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Calcário Canta Galo
+                                Transportes do Nordeste
                             </Typography>
                             <video className={styles.video} controls width={'100%'} >
                                 <source src={calcarioCantaGalo} type="video/mp4" />
@@ -57,22 +57,21 @@ const About = () => {
                     <Card className={styles.card} sx={{ maxWidth: 345 }}>
                         <CardMedia
                             style={{ backgroundImage: 'url("/assets/aboutUs/caeira_canta_galo.png")' }}
-                            sx={{ height: 140 }}
-                            title="green iguana"
+                            sx={{ height: 160 }}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Caeira Canta Galo
+                                Transportes do Nordeste
                             </Typography>
-                            <img src="/assets/companies/transportes_caeira_canta_galo.jpg" alt="" srcset="" width={'100%'} height={'176px'} />
+                            <video className={styles.video} controls width={'100%'} >
+                                <source src={transportesCantaGalo} type="video/mp4" />
+                            </video>
                         </CardContent>
                     </Card>
-
                     <Card className={styles.card} sx={{ maxWidth: 345 }}>
                         <CardMedia
                             style={{ backgroundImage: 'url("/assets/aboutUs/fazenda_canta_galo.png")', backgroundSize: 'auto' }}
-                            sx={{ height: 140, width: '100%' }}
-                            title="green iguana"
+                            sx={{ height: 160, width: '100%' }}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
@@ -83,10 +82,8 @@ const About = () => {
                             </video>
                         </CardContent>
                     </Card>
-
                 </section>
             </section>
-
             <section style={{ marginTop: '15vh', display: 'flex', justifyContent: 'center' }}>
                 <video className={styles.video} controls>
                     <source src={video} type="video/mp4" />
