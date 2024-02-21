@@ -1,6 +1,6 @@
 const contacts = {
     email: 'administração@caeiracantagalo.com',
-    sac: '558589563656',
+    sac: '5588981409245',
     whatsappBuyInfo: {
         number: '5585981409245',
     },
