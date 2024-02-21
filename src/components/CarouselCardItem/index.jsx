@@ -33,7 +33,7 @@ const CarouselCardItem = ({ info, isMobile = false }) => {
             )) : <>
                 <Card sx={{ minWidth: '100%' }}>
                     <CardMedia
-                        sx={{ height: 350, width: '100%' }}
+                        sx={{ height: 240, width: '100%' }}
                         image={info.link}
                         title={info.title}
                     />
