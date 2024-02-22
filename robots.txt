@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/  # Impede que os mecanismos de busca acessem a pasta de administração
+Disallow: /private/  # Impede que os mecanismos de busca acessem a pasta de conteúdo privado
+Disallow: /cgi-bin/  # Impede que os mecanismos de busca acessem scripts CGI
+Disallow: /tmp/  # Impede que os mecanismos de busca acessem arquivos temporários
+Disallow: /config/  # Impede que os mecanismos de busca acessem arquivos de configuração
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml  # Especifique a localização do seu sitemap XML
