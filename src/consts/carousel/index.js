@@ -1,15 +1,19 @@
 import { } from "module";
 const mainCarousel = [
     {
-        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner1_mobile.jpg' : '/assets/banners/banner1.jpg',
+        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner1_mobile.png' : '/assets/banners/banner1.png',
         legend: '',
     },
     {
-        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner2_mobile.jpg' : '/assets/banners/banner2.jpg',
+        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner2_mobile.png' : '/assets/banners/banner2.png',
         legend: ''
     },
     {
-        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner3_mobile.jpg' : '/assets/banners/banner3.jpg',
+        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner3_mobile.png' : '/assets/banners/banner3.png',
+        legend: ''
+    },
+    {
+        link: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner4_mobile.png' : '/assets/banners/banner4.png',
         legend: ''
     }
 ]
@@ -30,6 +34,13 @@ const soluctionsCarousel = [
     {
         link: '/assets/products/super_cal.png',
         title: 'Super Cal Canta Galo',
+        details: '/assets/products/details/cal_ficha_tecnica.pdf',
+
+        description: "Cal hidratado rico em cálcio e magnésio, essenciais para resistência e durabilidade. Produzido a partir do óxido de cálcio, reage com água formando o hidróxido de cálcio. Esses minerais fortalecem materiais, prevenindo corrosão, oxidação, abrasão e danos por agentes corrosivos. Ideal para aplicações industriais que demandam alta resistência."
+    },
+    {
+        link: '/assets/products/dolomita.png',
+        title: 'Dolomita Canta Galo',
         details: '/assets/products/details/cal_ficha_tecnica.pdf',
 
         description: "Cal hidratado rico em cálcio e magnésio, essenciais para resistência e durabilidade. Produzido a partir do óxido de cálcio, reage com água formando o hidróxido de cálcio. Esses minerais fortalecem materiais, prevenindo corrosão, oxidação, abrasão e danos por agentes corrosivos. Ideal para aplicações industriais que demandam alta resistência."

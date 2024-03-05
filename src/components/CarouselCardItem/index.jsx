@@ -21,7 +21,7 @@ const CarouselCardItem = ({ info, isMobile = false }) => {
                             <Typography gutterBottom variant="h5" component="div">
                                 {item.title}
                             </Typography>
-                            <Typography textAlign={'left'} variant="body2" color="text.primary">
+                            <Typography textAlign={'left'} variant="body2" color="text.primary" fontSize={16}>
                                 {item.description}
                             </Typography>
                         </CardContent>

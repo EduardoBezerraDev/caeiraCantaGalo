@@ -36,7 +36,8 @@ const About = () => {
                     </div>
                 </Carousel>
             </section>
-            <Typography variant="h4" className={styles.title}>Nossas Empresas</Typography><br/>
+            <img src={/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? '/assets/banners/banner_nossas_empresas_mobile.png' : '/assets/banners/banner_nossas_empresas.png'} alt="banner de produtos" width={'100%'} />
+            <Typography variant="h4" className={styles.title} style={{ marginTop: '4vh' }}>Nossas Empresas</Typography><br/>
             <section className={styles.aboutCardContainer} style={{ marginTop: '2vh' }}>
                 <section className={styles.aboutCardContainer}>
 
